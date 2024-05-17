@@ -1,1 +1,1 @@
-# NFT-collection
+# JAVASCRIPT COURSE PROJECT NFTs
