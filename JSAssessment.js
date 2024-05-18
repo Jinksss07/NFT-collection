@@ -14,16 +14,15 @@ const NonFTs = []
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNonFT (_character, _mood, _haircolor, _weapon, _bling) {
+function mintNonFT (_name, _age, _haircolor, _talent) {
     const NonFT = {
-        "Name": _character,
-        "Mood": _mood,
+        "Name": _name,
+        "Age": _age,
         "Haircolor": _haircolor,
-        "Bling": _weapon,
-        "Design": _bling,
+        "Talent": _talent,
     }
     NonFTs.push(NonFT);
-    console.log("Minted: " + _character);
+    console.log("Minted: " + _name);
 }
 
 // create a "loop" that will go through an "array" of NFT's
@@ -32,10 +31,9 @@ function listNonFTs () {
     for (let i = 0; i < NonFTs.length; i++){
         console.log("\nID: \t\t\t\t\t" + (i + 1));
         console.log("\nName: \t\t\t\t" + NonFTs[i].Name);
-        console.log("Mood: \t\t\t\t" + NonFTs[i].Mood);
+        console.log("Age: \t\t\t\t" + NonFTs[i].Age);
         console.log("Haircolor: \t\t\t" + NonFTs[i].Haircolor);
-        console.log("Bling: \t\t\t\t" + NonFTs[i].Bling);
-        console.log("Design: \t\t\t" + NonFTs[i].Design);
+        console.log("Talent: \t\t\t\t" + NonFTs[i].Talent);
     }
 
 }
@@ -46,11 +44,10 @@ function getTotalSupply() {
 }
 
 // call your functions below this line
-mintNonFT("Anger", "Angry", "Red", "Flame", "Tuxedo");
-mintNonFT("Sadness", "Sad", "Blue", "Ice", "TurtleNeck");
-mintNonFT("Joy", "Joy", "Yellow", "Magic", "Dress,");
-mintNonFT("Anxi", "Anxiety", "Orange", "Spear", "Braids");
-mintNonFT("Embra", "Embarrassment", "Pink", "Horn", "Hoodie");
-mintNonFT("Evy", "Envy", "Green", "Sparkling", "Sweater");
+mintNonFT("Anger", "17", "Red", "Painting");
+mintNonFT("Sadness", "18", "Blue", "Acting");
+mintNonFT("Joy", "15", "Yellow", "Dancing");
+mintNonFT("Nety", "18", "Orange", "Cooking");
+mintNonFT("Evy", "18", "Green", "Singing");
 listNonFTs();
 getTotalSupply();
